@@ -1,0 +1,12 @@
+{
+  "name": "shinhan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "scss": "sass --watch styles/scss:styles/css --style expanded"
+  }
+}
