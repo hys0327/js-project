@@ -24,8 +24,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./project-1 # project-1 폴더를 배포할 폴더로 설정
-          destination_dir: /project-1 # /project-1 경로에 배포
+          publish_dir: ./laundrygo # project-1 폴더를 배포할 폴더로 설정
+          destination_dir: /laundrygo # /project-1 경로에 배포
 
       - name: Deploy project-2 to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
