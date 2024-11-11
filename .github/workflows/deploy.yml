@@ -1,0 +1,35 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Deploy shinhan to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./shinhan # shinhan 폴더를 배포할 폴더로 설정
+          destination_dir: /shinhan # /shinhan 경로에 배포
+
+      - name: Deploy project-1 to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./project-1 # project-1 폴더를 배포할 폴더로 설정
+          destination_dir: /project-1 # /project-1 경로에 배포
+
+      - name: Deploy project-2 to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./project-2 # project-2 폴더를 배포할 폴더로 설정
+          destination_dir: /project-2 # /project-2 경로에 배포
