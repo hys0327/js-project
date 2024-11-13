@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>신한은행 홈페이지</title>
+  <link rel="stylesheet" href="../styles/css/reset.css" />
+  <link rel="stylesheet" href="../styles/css/mixin.css" />
+  <link rel="stylesheet" href="../styles/css/header.css" />
+  <link rel="stylesheet" href="../styles/css/footer.css" />
+  <link rel="stylesheet" href="../styles/css/home.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../script/header.js" defer></script>
+  <script src="../script/footer.js" defer></script>
+  <script src="../script/home.js" defer></script>
+</head>
+
+<body>
+  <div id="header-bg"></div>
+  <div id="main-bg">
+    <main>
+      <section class="event">
+        <div class="slider">
+          <div class="slide-container">
+            <div class="slide">
+              <div class="text-wrap">
+                <p>개인형 IRP는</p>
+                <p>신한은행과 함께!</p>
+                <p>IRP 얼리버드 이벤트</p>
+                <button>
+                  <span class="text">자세히 보기</span>
+                </button>
+              </div>
+              <div class="image img-irp"></div>
+            </div>
+            <div class="slide">
+              <div class="text-wrap">문구 2</div>
+              <div class="image img-moneybus">
+              </div>
+            </div>
+            <div class="slide">
+              <div class="text-wrap">문구 3</div>
+              <div class="image img-young">
+              </div>
+            </div>
+            <!-- 추가 슬라이드 -->
+          </div>
+          <button class="slide-btn prev">
+            <span class="icon icon-prev"></span>
+          </button>
+          <button class="slide-btn next">
+            <span class="icon icon-next"></span>
+          </button>
+          <div class="page-indicator">
+            <div class="left">
+              <span class="current">1</span>
+              <span class="gap">/</span>
+              <span class="total">3</span>
+            </div>
+            <div class="right">
+              <button class="slide-btn pause">
+                <span class="icon icon_pause"></span>
+              </button>
+              <button class="slide-btn play">
+                <span class="icon icon_play"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="favorite-service">
+          <h2>자주 찾는 서비스</h2>
+          <ul>
+            <li class="active"><a href="#">개인</a></li>
+            <li><a href="#">기업</a></li>
+          </ul>
+          <div class="item-wrap">
+            <div class="item">
+              <span class="icon icon_check"></span>
+              <span class="text">조회</span>
+            </div>
+            <div class="item">
+              <span class="icon icon_transfer"></span>
+              <span class="text">이체</span>
+            </div>
+            <div class="item">
+              <span class="icon icon_bills"></span>
+              <span class="text">공과금</span>
+            </div>
+            <div class="item">
+              <span class="icon icon_certification"></span>
+              <span class="text">인증센터</span>
+            </div>
+            <div class="item">
+              <span class="icon icon_financial"></span>
+              <span class="text">대출</span>
+            </div>
+            <div class="item">
+              <span class="icon icon_rate"></span>
+              <span class="text">환율</span>
+            </div>
+            <div class="item">
+              <span class="icon icon_bank"></span>
+              <span class="text">오픈뱅킹</span>
+            </div>
+            <div class="item">
+              <span class="icon icon_data_fee"></span>
+              <span class="text">통신요금</span>
+            </div>
+            <div class="item">
+              <span class="icon icon_service_center"></span>
+              <span class="text">고객센터</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="support">
+        <div class="notice">
+          <h2>뉴스/소식</h2>
+          <div class="top_menu">
+            <ul>
+              <li class="active"><a href="#">공지사항</a></li>
+              <li><a href="#">보안뉴스</a></li>
+            </ul>
+            <button>
+              <span class="text">더보기</span>
+              <span class="icon icon_plus"></span>
+            </button>
+          </div>
+          <div class="content">
+            <ul>
+              <li>
+                <a href="#">NICE 본인인증기관 네트워크 작업으로 인한 순단 안내(11.16(토))</a>
+                <span class="year-to-date">2024.11.11</span>
+              </li>
+              <li>
+                <a href="#">신협중앙회, 아이엠뱅크 등 금융공동망 업무 일시중단 안내</a>
+                <span class="year-to-date">2024.11.09</span>
+              </li>
+              <li>
+                <a href="#">영업점 통합대형화 안내</a>
+                <span class="year-to-date">2024.11.08</span>
+              </li>
+              <li>
+                <a href="#">바이오인증(얼굴/장정맥) 일시 순단 안내</a>
+                <span class="year-to-date">2024.11.06</span>
+              </li>
+              <li>
+                <a href="#">신한 SOL Bank/SOL Biz/기업인터넷뱅킹 정기 개선 작업 안내</a>
+                <span class="year-to-date">2024.11.04</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="customer">
+          <h2>고객지원</h2>
+          <div class="item-wrap">
+            <div class="item">
+              <span class="text">신한뱅킹 이용가이드</span>
+            </div>
+            <div class="item">
+              <span class="text">자주 묻는 질문</span>
+            </div>
+            <div class="item">
+              <span class="text">퇴직연금 공시</span>
+            </div>
+            <div class="item">
+              <span class="text">금리 안내</span>
+            </div>
+            <div class="item">
+              <span class="text">서식 자료실</span>
+            </div>
+            <div class="item">
+              <span class="text">약관 자료실</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service">
+        <h2>연관 서비스</h2>
+        <div class="item-wrap">
+          <div class="item item-sol"></div>
+          <div class="item item-pay"></div>
+          <div class="item item-certificate"></div>
+          <div class="item item-life"></div>
+          <div class="item item-super"></div>
+        </div>
+      </section>
+    </main>
+    <a href="#" class="btn-go-top">
+      <span class="icon icon_arrow_top"></span>
+    </a>
+  </div>
+  <div id="footer-bg"></div>
+</body>
+
+</html>

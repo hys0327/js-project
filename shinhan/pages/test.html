@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            width: 70%;
+            background-color: #85d47e;
+            padding: 30px 40px;
+        }
+
+        .nav>ul {
+            display: flex;
+            justify-content: right;
+        }
+
+        .nav>ul>li {
+            position: relative;
+        }
+
+        .nav>ul>li>a {
+            background-color: #84c482;
+            display: block;
+            padding: 10px 40px;
+            transition: all 0.2s;
+        }
+
+        .nav>ul>li>a:hover {
+            background-color: #56af4d;
+        }
+
+        .nav>ul>li>ul {
+            position: absolute;
+            left: 0;
+            top: 42px;
+            background-color: #ccc;
+            width: 100%;
+            display: none;
+        }
+
+        .nav>ul>li>ul>li>a {
+            padding: 10px;
+            display: block;
+            transition: all 0.2s;
+        }
+
+        .nav>ul>li>ul>li>a:hover {
+            background-color: #eafcbb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#">메뉴1</a>
+                <ul class="submenu">
+                    <li><a href="#">서브메뉴1-1</a></li>
+                    <li><a href="#">서브메뉴1-2</a></li>
+                    <li><a href="#">서브메뉴1-3</a></li>
+                    <li><a href="#">서브메뉴1-4</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">메뉴2</a>
+                <ul class="submenu">
+                    <li><a href="#">서브메뉴2-1</a></li>
+                    <li><a href="#">서브메뉴2-2</a></li>
+                    <li><a href="#">서브메뉴2-3</a></li>
+                    <li><a href="#">서브메뉴2-4</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">메뉴3</a>
+                <ul class="submenu">
+                    <li><a href="#">서브메뉴3-1</a></li>
+                    <li><a href="#">서브메뉴3-2</a></li>
+                    <li><a href="#">서브메뉴3-3</a></li>
+                    <li><a href="#">서브메뉴3-4</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">메뉴4</a>
+                <ul class="submenu">
+                    <li><a href="#">서브메뉴4-1</a></li>
+                    <li><a href="#">서브메뉴4-2</a></li>
+                    <li><a href="#">서브메뉴4-3</a></li>
+                    <li><a href="#">서브메뉴4-4</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        const submenuList = document.querySelectorAll(".nav > ul > li");
+
+        submenuList.forEach(li => {
+            li.addEventListener("mouseover", () => {
+                li.querySelectorAll("ul").forEach((el) => {
+                    el.style.display = "block";
+                })
+            });
+            li.addEventListener("mouseout", () => {
+                li.querySelectorAll("ul").forEach((el) => {
+                    el.style.display = "none";
+                })
+            });
+        });
+    </script>
+</body>
+
+</html>

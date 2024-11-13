@@ -1,0 +1,32 @@
+@mixin icon-play {
+  background: url('../../icons/icon_play.svg') no-repeat center / cover;
+}
+@mixin icon-pause {
+  background: url('../../icons/icon_pause.svg') no-repeat center / cover;
+}
+
+@mixin icon-arrow-btm {
+  background: url('../../icons/icon_arrow_btm.svg') no-repeat center / cover;
+}
+@mixin icon-search {
+  background: url('../../icons/icon_search.svg') no-repeat center / cover;
+}
+@mixin img-logo {
+  background: url('../../images/desktop-logo.png') no-repeat center / cover;
+}
+
+.icon_arrow_btm {
+  @include icon-arrow-btm;
+}
+.icon_search {
+  @include icon-search;
+}
+.img_logo {
+  @include img-logo;
+}
+.icon_play {
+  @include icon-play;
+}
+.icon_pause {
+  @include icon-pause;
+}

@@ -1,0 +1,21 @@
+.icon_arrow_btm {
+  background: url("../../icons/icon_arrow_btm.svg") no-repeat center/cover;
+}
+
+.icon_search {
+  background: url("../../icons/icon_search.svg") no-repeat center/cover;
+}
+
+.img_logo {
+  background: url("../../images/desktop-logo.png") no-repeat center/cover;
+}
+
+.icon_play {
+  background: url("../../icons/icon_play.svg") no-repeat center/cover;
+}
+
+.icon_pause {
+  background: url("../../icons/icon_pause.svg") no-repeat center/cover;
+}
+
+/*# sourceMappingURL=mixin.css.map */
