@@ -1,3 +1,7 @@
+body #popup-container {
+  display: none;
+}
+
 #main-bg {
   position: relative;
 }

@@ -38,6 +38,10 @@
     .h-btm {
       display: flex;
       align-items: center;
+      .btn-mobile-logout,
+      .btn-mobile-menu {
+        display: none;
+      }
       a.logo {
         display: flex;
         align-items: center;

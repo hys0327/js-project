@@ -38,6 +38,10 @@
   display: flex;
   align-items: center;
 }
+#header-bg header .h-btm .btn-mobile-logout,
+#header-bg header .h-btm .btn-mobile-menu {
+  display: none;
+}
 #header-bg header .h-btm a.logo {
   display: flex;
   align-items: center;

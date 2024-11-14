@@ -9,13 +9,22 @@ function loadHeader() {
     });
 }
 
-window.addEventListener('DOMContentLoaded', loadHeader);
+// function loadMobileMenu() {
+//   fetch('../components/popup-mobile-menu.html')
+//     .then((response) => response.text())
+//     .then((data) => {
+//       document.getElementById('popup-container').innerHTML = data;
+//       // 모바일 메뉴 로드 후 이벤트 초기화
+//       initialzeMobileMenuEvents();
+//     });
+// }
 
 // header 관련 이벤트
 function initializeHeaderEvents() {
   const nav = document.querySelector('header nav');
   const gnbList = document.querySelectorAll('nav .gnb li');
   const lnbList = document.querySelectorAll('header .lnb-wrap');
+  const mobile_menu = document.querySelector('.btn-mobile-menu');
 
   gnbList.forEach((gnb) => {
     gnb.addEventListener('mouseenter', () => {
@@ -71,4 +80,21 @@ function initializeHeaderEvents() {
       });
     });
   });
+
+  // 모바일 팝업메뉴 불러오기
+  // mobile_menu.addEventListener('click', loadMobileMenu);
 }
+
+// 모바일 메뉴 닫기 이벤트
+function initialzeMobileMenuEvents() {
+  const closeButton = document.querySelector('.btn-close');
+  const popupContainer = document.getElementById('popup-container');
+  console.log('closeButton', closeButton);
+  if (closeButton) {
+    closeButton.addEventListener('click', function () {
+      popupContainer.innerHTML = '';
+    });
+  }
+}
+
+window.addEventListener('DOMContentLoaded', loadHeader);

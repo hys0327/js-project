@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../styles/css/header.css" />
   <link rel="stylesheet" href="../styles/css/footer.css" />
   <link rel="stylesheet" href="../styles/css/home.css" />
+  <link rel="stylesheet" href="../styles/css/responsive.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="../script/header.js" defer></script>
   <script src="../script/footer.js" defer></script>
@@ -17,6 +18,38 @@
 </head>
 
 <body>
+  <div id="popup-container">
+    <div class="dimmed"></div>
+    <div class="mobile-menu-popup">
+      <div class="top">
+        <button class="btn-close">
+          <span class="icon icon_close"></span>
+        </button>
+      </div>
+      <div class="btn-wrap">
+        <button class="btn-login">
+          <span class="icon icon_login"></span>
+          <span class="text">로그인</span>
+        </button>
+        <button class="btn-certification">
+          <span class="icon icon_certification"></span>
+          <span class="text">인증센터</span>
+        </button>
+      </div>
+      <div class="menu-container">
+        <div class="gnb-container">
+          <ul>
+            <li><a href="#">조회</a></li>
+            <li><a href="#">이체</a></li>
+            <li><a href="#">공과금</a></li>
+            <li><a href="#">외환</a></li>
+            <li><a href="#">금융상품</a></li>
+          </ul>
+        </div>
+        <div class="lnb-container"></div>
+      </div>
+    </div>
+  </div>
   <div id="header-bg"></div>
   <div id="main-bg">
     <main>

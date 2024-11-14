@@ -89,4 +89,4 @@ playButton.addEventListener('click', function () {
 
 // 초기 슬라이드
 showSlide(currentIndex);
-// startAutoSlide();
+startAutoSlide();
