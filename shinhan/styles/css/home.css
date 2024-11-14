@@ -12,13 +12,13 @@ body #popup-container {
 }
 #main-bg main section.event {
   display: flex;
-  column-gap: 100px;
+  justify-content: space-between;
   margin-bottom: 100px;
 }
 #main-bg main section.event .slider {
   display: flex;
   align-items: center;
-  flex: 0 0 60%;
+  flex: 0 0 50%;
   overflow: hidden;
   position: relative;
 }
